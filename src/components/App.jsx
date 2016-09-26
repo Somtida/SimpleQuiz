@@ -117,10 +117,17 @@ export default class App extends Component {
         current: 1
       }
   }
+  setScore(score) {
+    this.setState({score})
+  }
+
+  setCurrent(current) {
+    this.setState({current})
+  }
   render(){
       return(
         <div>
-          <QuestionList {...this.state}/>
+          <QuestionList {...this.state} setCurrent={this.setCurrent.bind(this)} setScore={this.setScore.bind(this)}/>
         </div>
       )
   }
