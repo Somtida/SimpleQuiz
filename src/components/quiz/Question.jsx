@@ -10,14 +10,18 @@ export default class Question extends Component {
       return(
         <div className="well">
           <h3>{question.text}</h3>
-          <hr/>
           <ul className="list-group">
             {this.props.question.choices.map(choice => {
               return(
                 <li className="list-group-item" key={choice.id}>
-                  <input type="radio" onChange={this.onChange.bind(this)} name={question.id} value={choice.id}/>
-                  {choice.id}. 
-                  {choice.text}
+                  <div className="row">
+                    <div className="col-md-1">
+                      <input type="radio" onChange={this.onChange.bind(this)} name={question.id} value={choice.id}/>
+                    </div>
+                    <div className="col-md-11">
+                      {choice.id}. <span>  {choice.text}</span>
+                    </div>
+                  </div>
                 </li>
               )
             })}
