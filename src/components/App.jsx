@@ -113,6 +113,69 @@ export default class App extends Component {
             text: 'None of above'
           }],
           correct: 'd'
+        },
+        {
+          id: 6,
+          text: 'When determining the efficiency of algorithm, the space factor is measured by',
+          choices: [{
+            id: 'a',
+            text: 'Counting the maximum memory needed by the algorithm'
+          },
+          {
+            id: 'b',
+            text: 'Counting the minimum memory needed by the algorithm'
+          },
+          {
+            id: 'c',
+            text: 'Counting the average memory needed by the algorithm'
+          },
+          {
+            id: 'd',
+            text: 'Counting the maximum disk space needed by the algorithm'
+          }],
+          correct: 'a'
+        },
+        {
+          id: 7,
+          text: 'Linked lists are best suited',
+          choices: [{
+            id: 'a',
+            text: 'for relatively permanent collections of data'
+          },
+          {
+            id: 'b',
+            text: 'for the size of the structure and the data in the structure are constantly changing'
+          },
+          {
+            id: 'c',
+            text: 'for both of above situation'
+          },
+          {
+            id: 'd',
+            text: 'for none of above situation'
+          }],
+          correct: 'b'
+        },
+        {
+          id: 8,
+          text: 'Arrays are best data structures',
+          choices: [{
+            id: 'a',
+            text: 'for the size of the structure and the data in the structure are constantly changing'
+          },
+          {
+            id: 'b',
+            text: 'for both of above situation'
+          },
+          {
+            id: 'c',
+            text: 'for relatively permanent collections of data'
+          },
+          {
+            id: 'd',
+            text: 'for none of above situation'
+          }],
+          correct: 'c'
         }
       ],
         score: 0,
